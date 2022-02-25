@@ -133,7 +133,7 @@ function generateString(length) {
   return (
     <div className="form">
       <div>
-        <h1> Add New Case</h1>
+        <center><h1> Add New Case</h1></center>
       </div>
  
       {/* Calling to the methods */}
@@ -143,6 +143,7 @@ function generateString(length) {
       </div>
  
       <form>
+        <center>
         {/* Labels and inputs for form data */}
         <label className="label">Name</label>
         <input onChange={handleName} className="input"
@@ -175,11 +176,12 @@ function generateString(length) {
 		<label className="label">Present Date Of Hearing</label>
         <input onChange={handlePresentDate} className="input"
           value={presentDate} type="date" />
-		
- 
-        <button onClick={handleSubmit} className="btn" type="submit">
-          Submit
+	
+      </center>
+      <center><button onClick={handleSubmit} className="btn" type="submit">
+          <h3>Submit</h3>
         </button>
+      </center>
       </form>
     </div>
   );
